@@ -1,0 +1,285 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMuxP7N96yWnmhekBqx9q6p",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Tamimah-Shafiq/Array/blob/main/Assignment%201%20(p)\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "w1l0jJpaXhKv",
+        "outputId": "555d9232-bbb1-4fd4-9598-91dee27f59fb"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "This is single quotes\n",
+            "This is double quotes\n",
+            "This is triple quotes\n"
+          ]
+        }
+      ],
+      "source": [
+        "single_quotes=('This is single quotes')\n",
+        "double_quotes=(\"This is double quotes\")\n",
+        "triple_quotes=(\"\"\"This is triple quotes\"\"\")\n",
+        "print(single_quotes)\n",
+        "print(double_quotes)\n",
+        "print(triple_quotes)\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "full_name=\"Tamimah Shafiq\"\n",
+        "\n",
+        "print(full_name.upper())\n",
+        "print(full_name.lower())\n",
+        "print(full_name.title())"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "2v9zVjbfcnQ5",
+        "outputId": "ff61fc04-89af-4b4c-f3f1-aaa5324e7383"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "TAMIMAH SHAFIQ\n",
+            "tamimah shafiq\n",
+            "Tamimah Shafiq\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "messy_text =\" Python programming is fun! \"\n",
+        "clean_text = messy_text.strip()\n",
+        "print(clean_text)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "9BzuCgcIf2NK",
+        "outputId": "8b4c5899-f025-4a38-b6c8-e1e5fa104c2c"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Python programming is fun!\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "messy_text =\" Python programming is fun! \"\n",
+        "messy_text= messy_text.replace(\"fun\",\"amazing\")\n",
+        "print(messy_text)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "vqphGmMAhidY",
+        "outputId": "00e50038-5e92-499d-8209-e3545bbdfd9d"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            " Python programming is amazing! \n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "messy_text =\" Python programming is fun! \"\n",
+        "messy_text= messy_text.count(\"i\")\n",
+        "print(messy_text)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "I1CmcOzCjvRu",
+        "outputId": "2567043f-8219-4e84-bece-fab84f56fdbe"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "2\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "sentence = \"The quick brown fox jumps over the lazy dog\"\n",
+        "word_list = sentence.split()\n",
+        "dashed_sentence = \"_\".join(word_list)\n",
+        "starts_with_the =sentence.startswith(\"The\")\n",
+        "fox_position=sentence.find(\"fox\")\n",
+        "print(word_list)\n",
+        "print(dashed_sentence)\n",
+        "print(starts_with_the)\n",
+        "print(fox_position)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "TgNfJQi9j8wP",
+        "outputId": "c56c18aa-bd5f-4aa3-f191-70201993c79e"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['The', 'quick', 'brown', 'fox', 'jumps', 'over', 'the', 'lazy', 'dog']\n",
+            "The_quick_brown_fox_jumps_over_the_lazy_dog\n",
+            "True\n",
+            "16\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "your_name = \"Tamimah Shafiq\"\n",
+        "your_age = 20\n",
+        "language = \"Arabic\"\n",
+        "sentence1 = f\"My name is {your_name} and I am {your_age} years old. I love to learn {language} language.\"\n",
+        "sentence2 = f\"I will completely learn to speak {language} in 2 months.\"\n",
+        "sentence3 = f\"In 5 years , I will be {your_age + 5} years old!\"\n",
+        "print(sentence1)\n",
+        "print(sentence2)\n",
+        "print(sentence3)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "hYHaY_MEwKj-",
+        "outputId": "0e35ddc3-623e-4de4-9384-23b514d8833a"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "My name is Tamimah Shafiq and I am 20 years old. I love to learn Arabic language.\n",
+            "I will completely learn to speak Arabic in 2 months.\n",
+            "In 5 years , I will be 25 years old!\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "your_name = \"Tamimah Shafiq\"\n",
+        "your_age = 20\n",
+        "language = \"Arabic\"\n",
+        "sentence1 = f\"My name is {your_name} and I am {your_age} years old. I love to learn {language} language.\"\n",
+        "sentence2 = f\"I will completely learn to speak {language} in 2 months.\"\n",
+        "sentence3 = f\"In 5 years , I will be {your_age + 5} years old!\"\n",
+        "print(sentence1)\n",
+        "print(sentence2)\n",
+        "print(sentence3)\n"
+      ],
+      "metadata": {
+        "id": "cneHfeZ90ngI"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "first_name = input(\"Enter your first name\").strip().capitalize()\n",
+        "last_name = input(\"Enter your last name\").strip().capitalize()\n",
+        "birth_year = input(\"Enter your birth year\")\n",
+        "\n",
+        "current_year = 2025\n",
+        "age = current_year - int(birth_year)\n",
+        "username = f\"{first_name[0].lower()}{last_name.lower()}{birth_year}\"\n",
+        "profile_message = f\"profile: {first_name} {last_name}, Age {age}; username:{username}\"\n",
+        "print(profile_message)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "o8M0r7pz6uXJ",
+        "outputId": "4bd126a3-4007-4880-b401-b509a42086cd"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter your first nametamimah\n",
+            "Enter your last namefatima\n",
+            "Enter your birth year2004\n",
+            "profile: Tamimah Fatima, Age 21; username:tfatima2004\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
