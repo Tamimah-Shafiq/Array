@@ -1,0 +1,81 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMQ3MNpOPPMMubnlUdAjuUf",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Tamimah-Shafiq/Array/blob/main/Assignment%202(p)\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Assignment 2"
+      ],
+      "metadata": {
+        "id": "jstLhnEJLeJ4"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "num1 = float (input(\"Enter first number\"))\n",
+        "operator = input(\"Enter operator(+,-,*,/):\")\n",
+        "\n",
+        "num2 = float (input(\"Enter second number\"))\n",
+        "if operator == '+':\n",
+        "   print(\"Result:\", num1 + num2)\n",
+        "\n",
+        "elif operator == '-':\n",
+        "   print(\"Result:\", num1 - num2)\n",
+        "\n",
+        "elif operator == '*':\n",
+        "   print(\"Result:\", num1 * num2)\n",
+        "\n",
+        "elif operator =='/':\n",
+        "   print(\"Result:\", num1 / num2 if num2 !=0 else \"Erorr! Division by zero.\")\n",
+        "else:\n",
+        "   print(\"Invalid operator\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "8Hh_voTtLibY",
+        "outputId": "e4a87960-98c0-4ec0-e41e-55444fcbb710"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter first number10\n",
+            "Enter operator(+,-,*,/):+\n",
+            "Enter second number30\n",
+            "Result: 40.0\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
